@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Gourmet - Cuaderno de Recetas</title>
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f7e6d5; /* color carne claro */
+    }
+
+    .contenido {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5a3e2b;
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #3d2b1f;
+      border-bottom: 1px dotted #999;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #3d2b1f;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    .indice {
+      border-bottom: 2px solid #b3875b;
+      padding-bottom: 15px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .boton-receta {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 8px 15px;
+      background: #e4c1a1;
+      border: 1px solid #b08864;
+      text-decoration: none;
+      color: #3d2b1f;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .receta {
+      background-color: #d9b89c; /* café más fuerte */
+      page-break-inside: avoid;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .destacado-hamburguesa {
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+    }
+
+    .destacado-hamburguesa img {
+      width: 100%;
+      max-height: 1500;
+      object-fit: cover;
+      display: block;
+    }
+
+    .leyenda-hamburguesa {
+      position: absolute;
+      bottom: 0;
+      background: rgba(107, 66, 38, 0.9);
+      color: white;
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .contacto {
+      background-color: #d9b89c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #b3875b;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+    @media print {
+      .boton-receta,
+      .indice {
+        display: none;
+      }
+
+      body {
+        font-size: 12pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <h1>PANADERÍA GOURMET</h1>
+
+    <!-- Imagen destacada -->
+    <div class="destacado-hamburguesa">
+      <img src="hamburguesa.jpg" alt="Pan de hamburguesa artesanal con semillas">
+    </div>
+
+    <!-- Índice de recetas -->
+    <div class="indice">
+      <a href="#masa-madre" class="boton-receta">Masa Madre</a>
+      <a href="#croissants" class="boton-receta">Croissants</a>
+      <a href="#platano" class="boton-receta">Pan de Plátano</a>
+<a href="https://www.recetasgratis.net/Pan-busqCate-1.html" class="boton-receta" target="_blank">Recetas de Pan</a>
+      <a href="#contacto" class="boton-receta">Contáctanos</a>
+    </div>
+
+    <!-- Recetas -->
+    <div class="receta" id="masa-madre">
+      <h2>Pan de Masa Madre</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Harina</li>
+        <li>Agua</li>
+        <li>Sal</li>
+        <li>Masa madre</li>
+      </ul>
+      <h3>Proceso:</h3>
+      <ol>
+        <li>Mezclar todos los ingredientes</li>
+        <li>Reposo inicial (30 min)</li>
+        <li>Pliegues cada hora (4 veces)</li>
+        <li>Fermentación: 12 h a 20°C</li>
+        <li>Horneado: 240°C 20 min + 200°C 25 min</li>
+      </ol>
+    </div>
+
+    <div class="receta" id="croissants">
+      <h2>Croissants Clásicos</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Harina</li>
+        <li>Mantequilla</li>
+        <li>Leche</li>
+        <li>Levadura</li>
+        <li>Azúcar</li>
+      </ul>
+      <h3>Proceso:</h3>
+      <ol>
+        <li>Mezclar la harina, azúcar y levadura en un tazón grande.</li>
+        <li>Añadir leche y formar una masa homogénea.</li>
+        <li>Reposar la masa 30 minutos.</li>
+        <li>Incorporar la mantequilla en pliegues, refrigerando entre dobleces.</li>
+        <li>Formar los croissants y dejar fermentar hasta que doblen su tamaño.</li>
+        <li>Hornear a 200°C durante 20 minutos o hasta dorar.</li>
+      </ol>
+      <p><strong>Tiempo total estimado:</strong> 4 horas</p>
+    </div>
+
+    <div class="receta" id="platano">
+      <h2>Pan de Plátano</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Plátano maduro</li>
+        <li>Harina</li>
+        <li>Huevos</li>
+        <li>Mantequilla</li>
+        <li>Azúcar</li>
+      </ul>
+      <h3>Proceso:</h3>
+      <ol>
+        <li>Precalentar el horno a 180°C.</li>
+        <li>Triturar los plátanos en un tazón.</li>
+        <li>Añadir mantequilla derretida, huevos y azúcar; mezclar bien.</li>
+        <li>Incorporar la harina hasta obtener una masa uniforme.</li>
+        <li>Verter en un molde engrasado.</li>
+        <li>Hornear durante 50 minutos o hasta que al insertar un palillo salga limpio.</li>
+      </ol>
+      <p><strong>Tiempo de horneado:</strong> 50 minutos</p>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="contacto" id="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes dudas o quieres hacer un pedido?</p>
+      <p>Escríbenos a: <strong>contacto@panaderiagourmet.com</strong></p>
+      <p>O visítanos en nuestras redes sociales.</p>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    2025 Panadería Gourmet - Todos los derechos reservados
+  </footer>
+</body>
+</html>
+
+
